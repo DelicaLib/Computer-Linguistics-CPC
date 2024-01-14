@@ -30,6 +30,7 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 ``` 
 ## Database and Bot
 Файлы в директории *Database and Bot* можно запускать как на *Windows*, так и на *Linux*.
+
 Используемая СУБД: PostgreSQL. Код создания базы данных находится в *create_database.sql*.
 
 Необходимые библиотеки:
