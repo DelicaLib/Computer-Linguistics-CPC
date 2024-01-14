@@ -16,7 +16,8 @@ sudo apt install openjdk-8-jdk
 ```
 
 Необходимо создать модель для поиска синонимов с помощью файла *create_model.py*, который находиться в директории *synonyms*. До этого необходимо создать и заполнить массивом строк файл *data.json* на одном уровне с *create_model.py*.
-Или можно найти готовую модель и изменить строчку кода в *main.py*
+
+Или можно найти готовую модель и изменить строчку кода в *main.py*:
 ```python
 model = Word2VecModel.load("synonyms/model/Word2VecModel")
 ```
@@ -28,8 +29,9 @@ model = Word2VecModel.load("synonyms/model/Word2VecModel")
 uvicorn main:app --host 0.0.0.0 --port 8000
 ``` 
 ## Database and Bot
-Файлы в директории *Database and Bot* неможно запускать как на *Windows*, так и на *Linux*.
-Используемая СУБД: PostgreSQL 16.
+Файлы в директории *Database and Bot* можно запускать как на *Windows*, так и на *Linux*.
+Используемая СУБД: PostgreSQL. Код создания базы данных находится в *create_database.sql*.
+
 Необходимые библиотеки:
 ```bash
 pip install telebot
