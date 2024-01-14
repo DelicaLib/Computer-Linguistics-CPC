@@ -1,0 +1,22 @@
+encoding "utf8";
+
+TTextMinerConfig {
+  Dictionary = "dict.gzt";       // корневой словарь газеттира
+  PrettyOutput = "debug.html";  // файл с отладочным выводом
+
+  Input = {
+    File = "test.txt";          // файл с анализируемым текстом
+    Type = dpl;                 // режим чтения "document per line" (каждая строка - отдельный документ)
+  }
+
+  Articles = [
+    { Name = "Имя" }       // Запустить статью корневого словаря "РодилсяВ"
+  ]
+  Facts = [
+    { Name = "VIPPerson" }       // Сохранить факт "BornFact"
+  ]
+  Output = {
+    File = "peoples.json";         // Записать факты в файл "facts.txt"
+    Format = json;              // используя при этом простой текстовый формат
+  }
+}

@@ -1,0 +1,6 @@
+import "base.proto";
+import "facttypes_base.proto";
+message VIPPerson: NFactType.TFact 
+{
+    required string Person = 1;
+}
