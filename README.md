@@ -46,9 +46,7 @@ pip install schedule
 pip install python-dotenv
 pip install requests
 pip install bs4
-pip install urllib3
 pip install psycopg2
-pip install urllib3
 ```
 Также необходимо в этой директории создать файл .env, в котором указать (Заменить значения в кавычках на свои):
 ```bash
